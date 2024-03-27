@@ -13,9 +13,11 @@ iOS приложение, моделирующее и визуализирующ
 Меню с выбором параметров.
 Реализовала выбор размера группы с помощью TextField, a остальных параметров с помощью слайдеров, так как это самый быстрый и удобный способ выбора для пользователя.
 
-<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/00startScreen.png" width="200">
-<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/01startScreen.png" width="200">
-<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/02startScreen.png" width="200">
+<p float="left">
+    <img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/00startScreen.png" width="200">
+    <img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/01startScreen.png" width="200">
+    <img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/02startScreen.png" width="200">
+</p>
 
 ### Экран моделирования
 
