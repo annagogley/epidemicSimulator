@@ -1,5 +1,4 @@
-<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/icon.png" width="50"> 
-# EpidemicSimulator
+# EpidemicSimulator <img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/icon.png" width="50"> 
 
 iOS приложение, моделирующее и визуализирующее распространение инфекции в группе людей.
 
