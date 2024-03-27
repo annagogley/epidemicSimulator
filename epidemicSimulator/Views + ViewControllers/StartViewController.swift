@@ -14,10 +14,12 @@ class StartViewController: UIViewController {
 //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Set parameters"
         self.view = startView
         setupButtons()
+        view.addGestureRecognizer(tap)
     }
 }
 
@@ -31,13 +33,20 @@ extension StartViewController {
         navigationController?.pushViewController(destination, animated: true)
         destination.delegate = self
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
 //MARK: - UserDataDelegate protocol conformation
 
 extension StartViewController : UserDataDelegate {
     func getGroupSize() -> Int {
-        return Int(round(startView.gsSldr.value))
+        guard let value = (Int(startView.gsTf.text!)) else {
+            return 100
+        }
+        return abs(value)
     }
     
     func getInfectionFactor() -> Int {

@@ -1,4 +1,4 @@
-# EpidemicSimulator
+<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/icon.png" width="50"> # EpidemicSimulator
 
 iOS приложение, моделирующее и визуализирующее распространение инфекции в группе людей.
 
@@ -10,9 +10,11 @@ iOS приложение, моделирующее и визуализирующ
 ### Start screen
 
 Меню с выбором параметров.
-Реализовала выбор с помощью слайдеров, так как это самый быстрый и удобный способ выбора для пользователя.
+Реализовала выбор размера группы с помощью TextField, a остальных параметров с помощью слайдеров, так как это самый быстрый и удобный способ выбора для пользователя.
 
-<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/0startScreen.png" width="200">
+<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/00startScreen.png" width="200">
+<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/01startScreen.png" width="200">
+<img src="https://github.com/annagogley/epidemicSimulator/blob/main/screenshots/02startScreen.png" width="200">
 
 ### Экран моделирования
 

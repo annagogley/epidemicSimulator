@@ -28,7 +28,3 @@ class SIRCollectionViewCell : UICollectionViewCell {
         }
     }
 }
-
-enum HealthStatus {
-    case suspectible, infected
-}

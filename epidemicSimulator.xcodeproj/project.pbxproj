@@ -25,6 +25,7 @@
 		37A5B6202BB1B2C600D61079 /* UserDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A5B61F2BB1B2C600D61079 /* UserDataDelegate.swift */; };
 		37A9A4832BB416E200DD463E /* SIRCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A9A4822BB416E200DD463E /* SIRCollectionViewCell.swift */; };
 		37A9A4852BB4771800DD463E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A9A4842BB4771800DD463E /* Constants.swift */; };
+		37A9A4872BB4889100DD463E /* HealthStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A9A4862BB4889100DD463E /* HealthStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		37A5B61F2BB1B2C600D61079 /* UserDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataDelegate.swift; sourceTree = "<group>"; };
 		37A9A4822BB416E200DD463E /* SIRCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIRCollectionViewCell.swift; sourceTree = "<group>"; };
 		37A9A4842BB4771800DD463E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37A9A4862BB4889100DD463E /* HealthStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +84,10 @@
 			children = (
 				37A5B5F12BB17F8B00D61079 /* AppDelegate.swift */,
 				37A5B5F32BB17F8B00D61079 /* SceneDelegate.swift */,
-				37A5B6172BB1985300D61079 /* ModelViewController.swift */,
 				37A9A4842BB4771800DD463E /* Constants.swift */,
-				37A9A4822BB416E200DD463E /* SIRCollectionViewCell.swift */,
-				37A5B61B2BB1AF1400D61079 /* ModelView.swift */,
-				37A5B5F52BB17F8B00D61079 /* StartViewController.swift */,
-				37A5B61D2BB1B2AA00D61079 /* StartView.swift */,
+				37A9A4862BB4889100DD463E /* HealthStatus.swift */,
 				37A5B61F2BB1B2C600D61079 /* UserDataDelegate.swift */,
+				37A9A4882BB488C700DD463E /* Views + ViewControllers */,
 				37A5B6122BB1837600D61079 /* CustomViews */,
 				37A5B5FA2BB17F8C00D61079 /* Assets.xcassets */,
 				37A5B5FC2BB17F8C00D61079 /* LaunchScreen.storyboard */,
@@ -107,6 +106,18 @@
 				37A5B60E2BB1829800D61079 /* CustomLabel.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		37A9A4882BB488C700DD463E /* Views + ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				37A5B61B2BB1AF1400D61079 /* ModelView.swift */,
+				37A5B6172BB1985300D61079 /* ModelViewController.swift */,
+				37A5B5F52BB17F8B00D61079 /* StartViewController.swift */,
+				37A5B61D2BB1B2AA00D61079 /* StartView.swift */,
+				37A9A4822BB416E200DD463E /* SIRCollectionViewCell.swift */,
+			);
+			path = "Views + ViewControllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 				37A5B61C2BB1AF1400D61079 /* ModelView.swift in Sources */,
 				37A9A4832BB416E200DD463E /* SIRCollectionViewCell.swift in Sources */,
 				37A5B5F62BB17F8B00D61079 /* StartViewController.swift in Sources */,
+				37A9A4872BB4889100DD463E /* HealthStatus.swift in Sources */,
 				37A5B6112BB182BA00D61079 /* CustomButton.swift in Sources */,
 				37A9A4852BB4771800DD463E /* Constants.swift in Sources */,
 				37A5B5F22BB17F8B00D61079 /* AppDelegate.swift in Sources */,

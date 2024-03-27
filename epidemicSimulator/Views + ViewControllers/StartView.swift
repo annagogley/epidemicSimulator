@@ -11,8 +11,8 @@ import SnapKit
 final class StartView : UIView {
     
     private let gsLbl = CustomLabel(text: "Размер группы", size: 18)
-    private let gsDscrptn = CustomLabel(text: "Количество людей в моделируемой группе. От 2 до 100000", size: 12)
-    let gsSldr = CustomSlider(minValue: 1, maxValue: 100000, minValImage: "person.fill", maxValImage: "person.3.fill")
+    private let gsDscrptn = CustomLabel(text: "Количество людей в моделируемой группе. От 0 до Int.max. Если будет введено некорректное значение, то группа будет из 100 человек", size: 12)
+    let gsTf = CustomTextField(placeholder: "Введите количество людей")
     private let gsSV = CustomStackView(spacing: 6)
     
     private let ifLbl = CustomLabel(text: "Инфекционный фактор", size: 18)
@@ -54,7 +54,7 @@ final class StartView : UIView {
         timeSV.addArrangedSubview(timeDscrptn)
         
         mainStackView.addArrangedSubview(gsSV)
-        mainStackView.addArrangedSubview(gsSldr)
+        mainStackView.addArrangedSubview(gsTf)
         mainStackView.addArrangedSubview(ifSV)
         mainStackView.addArrangedSubview(ifSldr)
         mainStackView.addArrangedSubview(timeSV)
@@ -76,7 +76,7 @@ final class StartView : UIView {
             make.width.equalToSuperview().inset(16)
         }
         
-        gsSldr.snp.makeConstraints { make in
+        gsTf.snp.makeConstraints { make in
             make.width.equalToSuperview()
         }
         

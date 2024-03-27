@@ -39,13 +39,14 @@ final class CustomTextField: UITextField {
     
     //MARK: - private methods
     private func setupTextField(with placeholder: String) {
-        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         textAlignment = .left
 
         layer.cornerRadius = 12
-        layer.backgroundColor = UIColor.lightGray.cgColor
         layer.borderWidth = 1
+        layer.borderColor = UIColor.lightGray.cgColor
         font = .systemFont(ofSize: 18)
+        keyboardType = .numberPad
         
         snp.makeConstraints { make in
             make.height.equalTo(57)
