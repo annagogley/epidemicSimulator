@@ -11,11 +11,13 @@ import SnapKit
 final class ModelView: UIView {
     
     private let stackView = CustomStackView(spacing: 12)
+    var infectedLabel = CustomLabel(text: "Количество зараженных", size: 18)
+    var suspectibleLable = CustomLabel(text: "Количество здоровых", size: 18)
     
-    init(frame: CGRect, gsLbl: String, ifLbl: String, timeLbl: String) {
-        super.init(frame: frame)
+    init() {
+        super.init(frame: .zero)
         self.backgroundColor = .white
-        setupViews(gsLbl: gsLbl, ifLbl: ifLbl, timeLbl: timeLbl)
+        setupViews()
     }
     
     @available(*, unavailable)
@@ -23,29 +25,18 @@ final class ModelView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupViews(gsLbl: String, ifLbl: String, timeLbl: String) {
+    func setupViews() {
+        
         addSubview(stackView)
-        stackView.addArrangedSubview(CustomLabel(text: gsLbl, size: 18))
-        stackView.addArrangedSubview(CustomLabel(text: ifLbl, size: 18))
-        stackView.addArrangedSubview(CustomLabel(text: timeLbl, size: 18))
-        addSubview(drawSquare())
+        stackView.addArrangedSubview(infectedLabel)
+        stackView.addArrangedSubview(suspectibleLable)
         setupConstraints()
     }
     
     func setupConstraints() {
         stackView.snp.makeConstraints { make in
-            make.top.equalTo(safeAreaLayoutGuide.snp.top).offset(16)
-            make.centerX.equalToSuperview()
-            make.width.equalToSuperview().inset(32)
+            make.horizontalEdges.equalToSuperview().offset(32)
+            make.bottom.equalToSuperview().inset(32)
         }
     }
-    
-    func drawSquare() -> UIView {
-        let rect = CGRect(x: 16, y: 275, width: bounds.width - 32, height: bounds.width - 32)
-        let v = UIView(frame: rect)
-        v.layer.borderColor = UIColor.red.cgColor
-        v.layer.borderWidth = 3
-        return v
-    }
 }
-

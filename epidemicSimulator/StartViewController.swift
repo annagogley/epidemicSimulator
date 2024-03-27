@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 
 class StartViewController: UIViewController {
     
@@ -16,7 +15,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Specify parameters"
+        title = "Set parameters"
         self.view = startView
         setupButtons()
     }
@@ -37,15 +36,15 @@ extension StartViewController {
 //MARK: - UserDataDelegate protocol conformation
 
 extension StartViewController : UserDataDelegate {
-    func sendGS() -> Int {
+    func getGroupSize() -> Int {
         return Int(round(startView.gsSldr.value))
     }
     
-    func sendIF() -> Int {
+    func getInfectionFactor() -> Int {
         return Int(round(startView.ifSldr.value))
     }
     
-    func sendTime() -> Int {
-        return Int(round(startView.timeSldr.value))
+    func getTimePeriod() -> Double {
+        return Double(round(startView.timeSldr.value))
     }
 }

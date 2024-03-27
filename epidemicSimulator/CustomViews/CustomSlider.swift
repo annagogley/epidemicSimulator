@@ -11,9 +11,9 @@ import SnapKit
 final class CustomSlider: UISlider {
     
     //MARK: - initialization
-    init(maxValue: Int, minValImage: String, maxValImage: String) {
+    init(minValue: Int, maxValue: Int, minValImage: String, maxValImage: String) {
         super.init(frame: .zero)
-        setupSlider(maxValue: maxValue, minValImage: minValImage, maxValImage: maxValImage)
+        setupSlider(minValue: minValue, maxValue: maxValue, minValImage: minValImage, maxValImage: maxValImage)
     }
     
     @available(*, unavailable)
@@ -22,11 +22,11 @@ final class CustomSlider: UISlider {
     }
     
     //MARK: - private methods
-    private func setupSlider(maxValue: Int, 
+    private func setupSlider(minValue: Int,
+                             maxValue: Int,
                              minValImage: String,
-                             maxValImage: String
-    ) {
-        minimumValue = 1
+                             maxValImage: String) {
+        minimumValue = Float(minValue)
         maximumValue = Float(maxValue)
         minimumValueImage = UIImage(systemName: minValImage)
         maximumValueImage = UIImage(systemName: maxValImage)

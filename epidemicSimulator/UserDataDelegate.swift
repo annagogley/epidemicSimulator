@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserDataDelegate: AnyObject {
-    func sendGS() -> Int
-    func sendIF() -> Int
-    func sendTime() -> Int
+    func getGroupSize() -> Int
+    func getInfectionFactor() -> Int
+    func getTimePeriod() -> Double
 }

@@ -10,19 +10,19 @@ import SnapKit
 
 final class StartView : UIView {
     
-    private let gsLbl = CustomLabel(text: "Group Size", size: 18)
-    private let gsDscrptn = CustomLabel(text: "Количество людей в моделируемой группе", size: 12)
-    let gsSldr = CustomSlider(maxValue: 1000, minValImage: "person.fill", maxValImage: "person.3.fill")
+    private let gsLbl = CustomLabel(text: "Размер группы", size: 18)
+    private let gsDscrptn = CustomLabel(text: "Количество людей в моделируемой группе. От 2 до 100000", size: 12)
+    let gsSldr = CustomSlider(minValue: 1, maxValue: 100000, minValImage: "person.fill", maxValImage: "person.3.fill")
     private let gsSV = CustomStackView(spacing: 6)
     
-    private let ifLbl = CustomLabel(text: "Infection Factor", size: 18)
-    private let ifDscrptn = CustomLabel(text: "Количество людей, которое может быть заражено при контакте", size: 12)
+    private let ifLbl = CustomLabel(text: "Инфекционный фактор", size: 18)
+    private let ifDscrptn = CustomLabel(text: "Количество людей, которое может быть заражено при контакте. Максимальное количество соседей - 8", size: 12)
     private let ifSV = CustomStackView(spacing: 6)
-    let ifSldr = CustomSlider(maxValue: 10, minValImage: "hare.fill", maxValImage: "hare.fill")
+    let ifSldr = CustomSlider(minValue: 2, maxValue: 9, minValImage: "microbe.fill", maxValImage: "allergens.fill")
     
-    private let timeLbl = CustomLabel(text: "Time period", size: 18)
-    private let timeDscrptn = CustomLabel(text: "Период пересчета количества зараженных людей", size: 12)
-    let timeSldr = CustomSlider(maxValue: 10, minValImage: "hare.fill", maxValImage: "hare.fill")
+    private let timeLbl = CustomLabel(text: "Временной период", size: 18)
+    private let timeDscrptn = CustomLabel(text: "Период пересчета количества зараженных людей, от 1 до 10 секунд", size: 12)
+    let timeSldr = CustomSlider(minValue: 1, maxValue: 10, minValImage: "hare.fill", maxValImage: "tortoise.fill")
     private let timeSV = CustomStackView(spacing: 6)
     
     let startModelButton = CustomButton(title: "Запустить моделирование")
